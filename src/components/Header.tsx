@@ -62,8 +62,8 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border bg-background px-4">
-            <nav className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 border-t border-border bg-background">
+            <nav className="flex flex-col space-y-4 px-4">
               <button onClick={() => scrollTo('home')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Home</button>
               <button onClick={() => scrollTo('about')} className="text-muted-foreground hover:text-foreground transition-colors text-left">About</button>
               <button onClick={() => scrollTo('services')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Services</button>
