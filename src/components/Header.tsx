@@ -15,14 +15,12 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
             <LogoIcon size={40} />
-            <div className="text-2xl font-bold text-foreground">
-              The Business Consultant
-            </div>
+            <span className="text-lg sm:text-xl md:text-2xl font-bold text-foreground whitespace-nowrap">The Business Consultant</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -64,7 +62,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border bg-background px-4">
             <nav className="flex flex-col space-y-4">
               <button onClick={() => scrollTo('home')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Home</button>
               <button onClick={() => scrollTo('about')} className="text-muted-foreground hover:text-foreground transition-colors text-left">About</button>
