@@ -1,0 +1,7 @@
+<svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Circular black background -->
+  <circle cx="125" cy="125" r="125" fill="black" />
+ 
+  <!-- Smaller left-facing quarter circle -->
+  <path d="M 165 165 H 85 A 80 80 0 0 1 165 85 V 165 Z" stroke="white" stroke-width="14" />
+</svg> 

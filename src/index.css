@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 30%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 100%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 0 0% 100%;
+  }
+
+  .dark {
+    /* Cursor-style pure-black surface */
+    --background: 0 0% 0%;      /* #000 */
+    --foreground: 0 0% 100%;    /* #FFF */
+
+    /* Cards & popovers: slightly raised charcoal */
+    --card: 0 0% 6%;            /* #0f0f0f */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Primary (default buttons) – pure white with black text */
+    --primary: 0 0% 100%;       /* #ffffff */
+    --primary-foreground: 0 0% 0%; /* #000 */
+
+    /* Secondary surfaces */
+    --secondary: 0 0% 10%;      /* #1a1a1a */
+    --secondary-foreground: 0 0% 95%;
+
+    /* Muted greys for subtle blocks */
+    --muted: 0 0% 15%;          /* #262626 */
+    --muted-foreground: 0 0% 65%;
+
+    /* Accent – neutral grey for hover/focus rings */
+    --accent: 0 0% 30%;         /* #4d4d4d */
+    --accent-foreground: 0 0% 98%;
+
+    /* Destructive / error */
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Lines & inputs */
+    --border: 0 0% 18%;         /* #2e2e2e */
+    --input: 0 0% 18%;
+    --ring: 0 0% 100%;          /* white focus ring */
+
+    /* Sidebar specific overrides */
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
