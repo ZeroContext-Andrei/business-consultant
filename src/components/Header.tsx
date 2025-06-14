@@ -59,23 +59,23 @@ const Header = () => {
             </button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border bg-background">
-            <nav className="flex flex-col space-y-4 px-4">
-              <button onClick={() => scrollTo('home')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Home</button>
-              <button onClick={() => scrollTo('about')} className="text-muted-foreground hover:text-foreground transition-colors text-left">About</button>
-              <button onClick={() => scrollTo('services')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Services</button>
-              <button onClick={() => scrollTo('insights')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Insights</button>
-              <button onClick={() => scrollTo('contact')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Contact</button>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                Book a Consultation
-              </Button>
-            </nav>
-          </div>
-        )}
       </div>
+
+      {/* Mobile Navigation: full-width panel positioned below header bar */}
+      {isMenuOpen && (
+        <div className="fixed inset-x-0 top-16 z-40 bg-background border-t border-border md:hidden">
+          <nav className="flex flex-col space-y-4 px-6 py-4">
+            <button onClick={() => scrollTo('home')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Home</button>
+            <button onClick={() => scrollTo('about')} className="text-muted-foreground hover:text-foreground transition-colors text-left">About</button>
+            <button onClick={() => scrollTo('services')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Services</button>
+            <button onClick={() => scrollTo('insights')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Insights</button>
+            <button onClick={() => scrollTo('contact')} className="text-muted-foreground hover:text-foreground transition-colors text-left">Contact</button>
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+              Book a Consultation
+            </Button>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
