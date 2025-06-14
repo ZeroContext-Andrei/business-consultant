@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative pt-24 md:pt-32 min-h-screen flex items-center bg-cover bg-center overflow-hidden"
+      className="relative pt-24 md:pt-32 min-h-[80vh] md:min-h-screen flex items-center bg-cover bg-center md:bg-center overflow-hidden"
       style={{ backgroundImage: "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80')" }}
     >
       {/* Overlay to darken background image */}
